@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/set/set"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "智能垃圾分类",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#2f2f2f",
+    "selectedColor": "#1989fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/homeii.png",
+        "selectedIconPath": "pages/images/homei.png"
+      },
+      {
+        "pagePath": "pages/set/set",
+        "text": "设备",
+        "iconPath": "pages/images/IOT1.png",
+        "selectedIconPath": "pages/images/IOT0.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/kepu.png",
+        "selectedIconPath": "pages/images/kepu1.png"
+      }
+    ]
+  }
+}
