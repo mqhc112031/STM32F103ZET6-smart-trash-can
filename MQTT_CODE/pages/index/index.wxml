@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="-wrapper">
+	<view class="header-wrapper">
+    <image style="height:40vh;z-index:-999;position: absolute;"mode="heightFix" src="../images/zhineng.png"></image>
+    <view class="header-content-wrapper">
+      <view class="header-title">
+        <span>空气质量-{{airText}}</span>
+        <view>东莞市--松山湖</view>
+      </view>
+		<view class="header-text">
+			<span>{{airValue}}</span>
+			<span>{{weather}}</span>
+		</view>
+		<view class="header-advice">{{weatherAdvice}}</view>
+  </view>
+	</view>
+</view>
+
+<!-- <image src="../images/4.jpg" class="swiper_head" mode="widthFix"/> -->
+<view class="body-wrapper">
+    <view class="body">
+      <view class="data-wrapper">
+        <view class="data">
+          <image class="data-logo" src="../images/kehuishouwu.png" />
+          <view class="data-text">
+            <view class="data-title">可回收物</view>
+          </view>
+        </view>
+        <view class="data">
+          <image class="data-logo" src="../images/shilaji.png" />
+          <view class="data-text">
+            <view class="data-title">湿垃圾</view>
+          </view>
+        </view>
+      </view>
+      <view class="data-wrapper">
+        <view class="data">
+          <image class="data-logo" src="../images/youhailaji.png" />
+          <view class="data-text">
+            <view class="data-title">有害垃圾</view>
+          </view>
+        </view>
+        <view class="data">
+          <image class="data-logo" src="../images/ganlaji.png" />
+          <view class="data-text">
+            <view class="data-title">干垃圾</view>
+        </view>
+      </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+<view class="data-wrapper">
+<view class="view_info">
+    <view class="view_info_title">
+      ✤垃圾分类简易口诀：
+    </view>
+    <view class="view_info_txt">
+      •        能卖钱的蓝桶桶, 易腐烂的绿桶桶
+    </view>
+    <view class="view_info_txt" style="margin-top:12rpx;">
+      •        有毒有害红桶桶, 没人要的灰桶桶
+    </view>
+
+  </view>
+</view>
+  

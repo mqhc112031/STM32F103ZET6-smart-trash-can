@@ -1,0 +1,139 @@
+<image src="../images/5.jpg" class="swiper_head" mode="widthFix" />
+<view class="more-list">
+  <view class="issue-link">
+    <view class="more-btn">
+      <text class="btn-name">设备状态</text>
+      <view class="btn-open">
+        <text wx:if="{{online==true}}" class="btn-text">在线</text>
+        <text wx:else class="btn-text">离线--历史数据</text>
+      </view>
+    </view>
+  </view>
+  <view class="issue-link">
+    <view class="more-btn">
+      <text class="btn-name">人体红外</text>
+      <view class="btn-open">
+        <text wx:if="{{LAX==1}}" class="btn-text">有人</text>
+        <text wx:elif="{{LAX==0}}" class="btn-text">没有人</text>
+        <text wx:else class="btn-text">数据错误</text>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">烟雾浓度</text>
+      <view class="btn-open">
+        <text class="btn-text" wx:if="{{smoke>0}}">{{smoke}}PPM</text>
+        <text class="btn-text" wx:else>数据错误</text>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">干垃圾(容量)</text>
+      <view class="btn-open">
+        <text class="btn-text" wx:if="{{TRCT1==1}}">满了</text>
+        <text class="btn-text" wx:elif="{{TRCT1==0}}">没满</text>
+        <text class="btn-text" wx:else>数据错误</text>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">湿垃圾(容量)</text>
+      <view class="btn-open">
+        <text class="btn-text" wx:if="{{TRCT2==1}}">满了</text>
+        <text class="btn-text" wx:elif="{{TRCT2==0}}">没满</text>
+        <text class="btn-text" wx:else>数据错误</text>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">有害垃圾(容量)</text>
+      <view class="btn-open">
+        <text class="btn-text" wx:if="{{TRCT3==1}}">满了</text>
+        <text class="btn-text" wx:elif="{{TRCT3==0}}">没满</text>
+        <text class="btn-text" wx:else>数据错误</text>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">可回收物(容量)</text>
+      <view class="btn-open">
+        <text class="btn-text" wx:if="{{TRCT4==1}}">满了</text>
+        <text class="btn-text" wx:elif="{{TRCT4==0}}">没满</text>
+        <text class="btn-text" wx:else>数据错误</text>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">报警器</text>
+      <view class="btn-open">
+        <view class="body-view">
+          <switch checked="{{Beep}}" bindchange="onBeepChange" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">干垃圾(舵机)</text>
+      <view class="btn-open">
+        <view class="body-view">
+          <switch checked="{{switch1Checked}}" bindchange="switch1Change" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">湿垃圾(舵机)</text>
+      <view class="btn-open">
+        <view class="body-view">
+          <switch checked="{{switch2Checked}}" bindchange="switch2Change" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">有害垃圾(舵机)</text>
+      <view class="btn-open">
+        <view class="body-view">
+          <switch checked="{{switch3Checked}}" bindchange="switch3Change" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">可回收物(舵机)</text>
+      <view class="btn-open">
+        <view class="body-view">
+          <switch checked="{{switch4Checked}}" bindchange="switch4Change" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="about-link">
+    <view class="more-btn">
+      <text class="btn-name">消毒装置</text>
+      <view class="btn-open">
+        <view class="body-view">
+          <switch checked="{{switch5Checked}}" bindchange="switch5Change" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="page-section-page-section-spacing">
+      <view class="page-section-title">
+        <text>消毒电机定时时间 </text>
+        <text class="info">{{speed}}/s</text>   
+      <slider bindchange="speedChange"  value="{{speed}}" min="0" max="60"/>
+    </view>
+  </view>

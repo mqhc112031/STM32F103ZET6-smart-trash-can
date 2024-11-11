@@ -1,0 +1,111 @@
+/**index.wxss**/
+.root-wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header-wrapper {
+  background: rgba(0, 0, 0, 0.6) no-repeat center center;
+  background-blend-mode: multiply;
+  height:40vh;
+  color: #fff;
+  /*box-shadow: #d6d6d6 0px 0px 5px;*/
+  /*padding: 15px 30px;*/
+}
+.header-content-wrapper{
+  padding: 120rpx 15rpx 20rpx 15rpx;
+}
+.header-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text {
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-advice {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.body-wrapper{
+  padding: 20rpx 15rpx 0 15rpx;
+}
+
+.data-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.data {
+  background-color:#2f2f2f;
+  width: 130px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 8px;
+  box-shadow: #d6d6d6 0px 0px 4px;
+
+}
+
+.data-logo {
+  height: 36px;
+  width: 36px;
+  margin-top: 15px;
+}
+
+.data-text {
+  margin-top: 15px;
+  color: #7f7f7f;
+
+}
+
+.data-title {
+  text-align: right;
+}
+
+.data-value {
+  font-size: 26px;
+}
+
+
+
+/* 分割线 */
+
+.image_kind {
+  margin-top: 10rpx;
+  width: 90%;
+  height: 90%;
+}
+
+.view_info {
+  width: 85%;
+  padding: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-shadow: 2px 2px 2px grey;
+  border: 0.5px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.view_info_title {
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.view_info_txt {
+  margin-left: 20rpx;
+  margin-bottom: 5rpx;
+  color: white;
+  font-size: 14px;
+}
