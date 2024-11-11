@@ -1,0 +1,7 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HAREWARE\LED -I..\HAREWARE\MQ2 -I..\HAREWARE\LCD -I..\HAREWARE\SPI -I..\HAREWARE\TCRT5000 -I..\HAREWARE\TIMER -I..\NET\cJSON -I..\NET\device -I..\NET\MQTT -I..\NET\onenet -I..\HAREWARE\BEEP -I..\HAREWARE\RTC -I..\HAREWARE\KEY -I..\HAREWARE\DRIVER -I..\HAREWARE\JDQ
+-I D:\OneDrive\桌面\毕设（正点原子STM32F103ZET6精英版）\4、代码测试\工程模板使用-所有基本库函数-K210\USER\RTE
+-I D:\mdk514\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0
+-I D:\mdk514\ARM\CMSIS\Include
+-I D:\mdk514\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
+-o ..\obj\stm32f10x_bkp.o --omf_browse ..\obj\stm32f10x_bkp.crf --depend ..\obj\stm32f10x_bkp.d --feedback "..\OBJ\LED.fed" "..\STM32F10x_FWLib\src\stm32f10x_bkp.c"
